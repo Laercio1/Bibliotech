@@ -82,8 +82,6 @@ namespace DAL
                 cmd.Connection = cn;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "SP_AlterarCustomer";
-                cn.Open();
-                cmd.ExecuteNonQuery();
 
                 SqlParameter pid = new SqlParameter("@Id", SqlDbType.Int);
                 pid.Value = _customer.Id;
@@ -108,6 +106,9 @@ namespace DAL
                 SqlParameter pphone = new SqlParameter("@Phone", SqlDbType.NVarChar);
                 pphone.Value = _customer.Phone;
                 cmd.Parameters.Add(pphone);
+
+                cn.Open();
+                cmd.ExecuteNonQuery();
 
                 return _customer;
             }

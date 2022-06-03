@@ -47,17 +47,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormCadastroCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroCustomer.Designer.cs">
+      <DependentUpon>FormCadastroCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastroProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroProduct.Designer.cs">
+      <DependentUpon>FormCadastroProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaOrder.Designer.cs">
+      <DependentUpon>FormConsultaOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaProduct.Designer.cs">
+      <DependentUpon>FormConsultaProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormDashboard.Designer.cs">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCadastroCustomer.cs">
+    <Compile Include="FormConsultaCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCadastroCustomer.Designer.cs">
-      <DependentUpon>FormCadastroCustomer.cs</DependentUpon>
+    <Compile Include="FormConsultaCustomer.Designer.cs">
+      <DependentUpon>FormConsultaCustomer.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
@@ -67,6 +91,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCadastroCustomer.resx">
+      <DependentUpon>FormCadastroCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroProduct.resx">
+      <DependentUpon>FormCadastroProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaCustomer.resx">
+      <DependentUpon>FormConsultaCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaOrder.resx">
+      <DependentUpon>FormConsultaOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaProduct.resx">
+      <DependentUpon>FormConsultaProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDashboard.resx">
       <DependentUpon>FormDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +122,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\Model.Customer.datasource" />
+    <None Include="Properties\DataSources\Model.Order.datasource" />
+    <None Include="Properties\DataSources\Model.Product.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -97,6 +139,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{23971eb7-be1f-4bb2-aa48-3665ebe7e56f}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{e92ff58a-e015-4d17-b548-9a772695e127}</Project>
       <Name>DAL</Name>
@@ -105,6 +151,9 @@
       <Project>{93c8df68-9bb6-44ae-b739-3e88b9b3f229}</Project>
       <Name>Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

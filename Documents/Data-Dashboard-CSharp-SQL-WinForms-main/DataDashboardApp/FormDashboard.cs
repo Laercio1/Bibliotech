@@ -1,4 +1,4 @@
-﻿using DashboardApp.Model;
+﻿using Model;
 using System;
 using System.Drawing;
 using System.Windows.Forms;

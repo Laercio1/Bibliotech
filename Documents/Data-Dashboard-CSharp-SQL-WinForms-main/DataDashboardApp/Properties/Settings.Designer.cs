@@ -22,5 +22,16 @@ namespace DashboardApp.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=NSYS-CDS-0301\\SQLDESENVOLVEDOR;Initial Catalog=NorthwindStore;Integra" +
+            "ted Security=True")]
+        public string NorthwindStoreConnectionString {
+            get {
+                return ((string)(this["NorthwindStoreConnectionString"]));
+            }
+        }
     }
 }

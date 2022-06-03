@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 using System.Globalization;
 using System.Linq;
 
-namespace DashboardApp.Model
+namespace Model
 {
     public struct RevenueByDate
     {
@@ -32,7 +32,6 @@ namespace DashboardApp.Model
         //Constructor
         public Dashboard()
         {
-
         }
 
         //Private methods

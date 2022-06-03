@@ -31,6 +31,7 @@ namespace DashboardApp
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.buttonProduto = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.buttonFornecedor = new System.Windows.Forms.Button();
             this.buttonCliente = new System.Windows.Forms.Button();
@@ -41,15 +42,19 @@ namespace DashboardApp
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(98)))), ((int)(((byte)(102)))), ((int)(((byte)(244)))));
+            this.panelMenu.BackColor = System.Drawing.Color.DarkCyan;
+            this.panelMenu.Controls.Add(this.buttonProduto);
             this.panelMenu.Controls.Add(this.buttonExit);
             this.panelMenu.Controls.Add(this.buttonFornecedor);
             this.panelMenu.Controls.Add(this.buttonCliente);
@@ -65,6 +70,27 @@ namespace DashboardApp
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(260, 701);
             this.panelMenu.TabIndex = 0;
+            // 
+            // buttonProduto
+            // 
+            this.buttonProduto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonProduto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonProduto.FlatAppearance.BorderSize = 0;
+            this.buttonProduto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonProduto.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonProduto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonProduto.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonProduto.ForeColor = System.Drawing.Color.White;
+            this.buttonProduto.Image = ((System.Drawing.Image)(resources.GetObject("buttonProduto.Image")));
+            this.buttonProduto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonProduto.Location = new System.Drawing.Point(0, 424);
+            this.buttonProduto.Name = "buttonProduto";
+            this.buttonProduto.Size = new System.Drawing.Size(260, 60);
+            this.buttonProduto.TabIndex = 6;
+            this.buttonProduto.Tag = "Produtos";
+            this.buttonProduto.Text = "Produtos";
+            this.buttonProduto.UseVisualStyleBackColor = true;
+            this.buttonProduto.Click += new System.EventHandler(this.buttonProduto_Click_1);
             // 
             // buttonExit
             // 
@@ -88,9 +114,10 @@ namespace DashboardApp
             // buttonFornecedor
             // 
             this.buttonFornecedor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonFornecedor.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonFornecedor.FlatAppearance.BorderSize = 0;
-            this.buttonFornecedor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(122)))), ((int)(((byte)(133)))));
-            this.buttonFornecedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(122)))), ((int)(((byte)(133)))));
+            this.buttonFornecedor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonFornecedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonFornecedor.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonFornecedor.ForeColor = System.Drawing.Color.White;
@@ -100,16 +127,18 @@ namespace DashboardApp
             this.buttonFornecedor.Name = "buttonFornecedor";
             this.buttonFornecedor.Size = new System.Drawing.Size(260, 60);
             this.buttonFornecedor.TabIndex = 4;
-            this.buttonFornecedor.Tag = "Fornecedor";
+            this.buttonFornecedor.Tag = "Fornecedores";
             this.buttonFornecedor.Text = "    Fornecedores";
             this.buttonFornecedor.UseVisualStyleBackColor = true;
+            this.buttonFornecedor.Click += new System.EventHandler(this.buttonFornecedor_Click);
             // 
             // buttonCliente
             // 
             this.buttonCliente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonCliente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonCliente.FlatAppearance.BorderSize = 0;
-            this.buttonCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(122)))), ((int)(((byte)(133)))));
-            this.buttonCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(122)))), ((int)(((byte)(133)))));
+            this.buttonCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCliente.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCliente.ForeColor = System.Drawing.Color.White;
@@ -119,16 +148,18 @@ namespace DashboardApp
             this.buttonCliente.Name = "buttonCliente";
             this.buttonCliente.Size = new System.Drawing.Size(260, 60);
             this.buttonCliente.TabIndex = 3;
-            this.buttonCliente.Tag = "Cliente";
+            this.buttonCliente.Tag = "Clientes";
             this.buttonCliente.Text = "Clientes";
             this.buttonCliente.UseVisualStyleBackColor = true;
+            this.buttonCliente.Click += new System.EventHandler(this.buttonCliente_Click);
             // 
             // buttonDespesa
             // 
             this.buttonDespesa.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonDespesa.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonDespesa.FlatAppearance.BorderSize = 0;
-            this.buttonDespesa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(122)))), ((int)(((byte)(133)))));
-            this.buttonDespesa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(122)))), ((int)(((byte)(133)))));
+            this.buttonDespesa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonDespesa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonDespesa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDespesa.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDespesa.ForeColor = System.Drawing.Color.White;
@@ -138,16 +169,18 @@ namespace DashboardApp
             this.buttonDespesa.Name = "buttonDespesa";
             this.buttonDespesa.Size = new System.Drawing.Size(260, 60);
             this.buttonDespesa.TabIndex = 2;
-            this.buttonDespesa.Tag = "Despesa";
+            this.buttonDespesa.Tag = "Despesas";
             this.buttonDespesa.Text = "Despesas";
             this.buttonDespesa.UseVisualStyleBackColor = true;
+            this.buttonDespesa.Click += new System.EventHandler(this.buttonDespesa_Click);
             // 
             // buttonReceita
             // 
             this.buttonReceita.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonReceita.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonReceita.FlatAppearance.BorderSize = 0;
-            this.buttonReceita.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(122)))), ((int)(((byte)(133)))));
-            this.buttonReceita.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(122)))), ((int)(((byte)(133)))));
+            this.buttonReceita.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonReceita.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonReceita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonReceita.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonReceita.ForeColor = System.Drawing.Color.White;
@@ -157,16 +190,18 @@ namespace DashboardApp
             this.buttonReceita.Name = "buttonReceita";
             this.buttonReceita.Size = new System.Drawing.Size(260, 60);
             this.buttonReceita.TabIndex = 1;
-            this.buttonReceita.Tag = "Receita";
+            this.buttonReceita.Tag = "Receitas";
             this.buttonReceita.Text = "Receitas";
             this.buttonReceita.UseVisualStyleBackColor = true;
+            this.buttonReceita.Click += new System.EventHandler(this.buttonReceita_Click);
             // 
             // buttonDashboard
             // 
             this.buttonDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonDashboard.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonDashboard.FlatAppearance.BorderSize = 0;
-            this.buttonDashboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(122)))), ((int)(((byte)(133)))));
-            this.buttonDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(122)))), ((int)(((byte)(133)))));
+            this.buttonDashboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.buttonDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.buttonDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDashboard.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDashboard.ForeColor = System.Drawing.Color.White;
@@ -194,11 +229,12 @@ namespace DashboardApp
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(170, 64);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.Size = new System.Drawing.Size(179, 64);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
@@ -215,11 +251,25 @@ namespace DashboardApp
             // panelDesktop
             // 
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.panelDesktop.Controls.Add(this.pictureBox3);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(260, 0);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(1174, 701);
             this.panelDesktop.TabIndex = 2;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(270, 161);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(651, 323);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
             // FormPrincipal
             // 
@@ -230,11 +280,14 @@ namespace DashboardApp
             this.Controls.Add(this.panelMenu);
             this.Name = "FormPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormPrincipal";
+            this.Text = "Dashboard Contábil";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelDesktop.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -252,5 +305,7 @@ namespace DashboardApp
         private System.Windows.Forms.PictureBox btnMenu;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button buttonProduto;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

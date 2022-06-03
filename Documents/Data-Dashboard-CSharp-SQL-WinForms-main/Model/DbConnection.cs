@@ -1,6 +1,6 @@
 ﻿using System.Data.SqlClient;
 
-namespace DashboardApp.Model
+namespace Model
 {
     public abstract class DbConnection
     {

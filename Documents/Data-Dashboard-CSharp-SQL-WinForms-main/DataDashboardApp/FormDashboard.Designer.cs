@@ -40,6 +40,7 @@ namespace DashboardApp
             System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
             this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
@@ -106,7 +107,7 @@ namespace DashboardApp
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 31);
@@ -140,7 +141,7 @@ namespace DashboardApp
             // btnThisMonth
             // 
             this.btnThisMonth.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThisMonth.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(83)))), ((int)(((byte)(255)))));
+            this.btnThisMonth.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnThisMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThisMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThisMonth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(141)))), ((int)(((byte)(181)))));
@@ -156,7 +157,7 @@ namespace DashboardApp
             // btnLast30Days
             // 
             this.btnLast30Days.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLast30Days.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(83)))), ((int)(((byte)(255)))));
+            this.btnLast30Days.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnLast30Days.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLast30Days.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLast30Days.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(141)))), ((int)(((byte)(181)))));
@@ -172,7 +173,7 @@ namespace DashboardApp
             // btnLast7Days
             // 
             this.btnLast7Days.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLast7Days.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(83)))), ((int)(((byte)(255)))));
+            this.btnLast7Days.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnLast7Days.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLast7Days.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLast7Days.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(141)))), ((int)(((byte)(181)))));
@@ -188,7 +189,7 @@ namespace DashboardApp
             // btnToday
             // 
             this.btnToday.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnToday.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(83)))), ((int)(((byte)(255)))));
+            this.btnToday.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnToday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnToday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(141)))), ((int)(((byte)(181)))));
@@ -204,7 +205,7 @@ namespace DashboardApp
             // btnCustomDate
             // 
             this.btnCustomDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCustomDate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(83)))), ((int)(((byte)(255)))));
+            this.btnCustomDate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnCustomDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCustomDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(141)))), ((int)(((byte)(181)))));
@@ -220,7 +221,7 @@ namespace DashboardApp
             // btnOkCustomDate
             // 
             this.btnOkCustomDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOkCustomDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(88)))), ((int)(((byte)(127)))));
+            this.btnOkCustomDate.BackColor = System.Drawing.Color.DarkCyan;
             this.btnOkCustomDate.FlatAppearance.BorderSize = 0;
             this.btnOkCustomDate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOkCustomDate.Image = ((System.Drawing.Image)(resources.GetObject("btnOkCustomDate.Image")));
@@ -235,7 +236,7 @@ namespace DashboardApp
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.lblNumOrders);
@@ -272,7 +273,7 @@ namespace DashboardApp
             this.lblNumOrders.AutoSize = true;
             this.lblNumOrders.BackColor = System.Drawing.Color.Transparent;
             this.lblNumOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumOrders.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblNumOrders.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             this.lblNumOrders.Location = new System.Drawing.Point(74, 34);
             this.lblNumOrders.Name = "lblNumOrders";
             this.lblNumOrders.Size = new System.Drawing.Size(78, 25);
@@ -286,15 +287,15 @@ namespace DashboardApp
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(141)))), ((int)(((byte)(181)))));
             this.label2.Location = new System.Drawing.Point(75, 14);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 20);
+            this.label2.Size = new System.Drawing.Size(146, 20);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Total de Despesas";
+            this.label2.Text = "Número de Vendas";
             // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.lblTotalRevenue);
@@ -332,7 +333,7 @@ namespace DashboardApp
             this.lblTotalRevenue.AutoSize = true;
             this.lblTotalRevenue.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalRevenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalRevenue.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTotalRevenue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             this.lblTotalRevenue.Location = new System.Drawing.Point(74, 34);
             this.lblTotalRevenue.Name = "lblTotalRevenue";
             this.lblTotalRevenue.Size = new System.Drawing.Size(78, 25);
@@ -346,14 +347,14 @@ namespace DashboardApp
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(141)))), ((int)(((byte)(181)))));
             this.label4.Location = new System.Drawing.Point(75, 14);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 20);
+            this.label4.Size = new System.Drawing.Size(125, 20);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Total de Receitas";
+            this.label4.Text = "Total de Vendas";
             // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.lblTotalProfit);
@@ -390,7 +391,7 @@ namespace DashboardApp
             this.lblTotalProfit.AutoSize = true;
             this.lblTotalProfit.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalProfit.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTotalProfit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             this.lblTotalProfit.Location = new System.Drawing.Point(74, 34);
             this.lblTotalProfit.Name = "lblTotalProfit";
             this.lblTotalProfit.Size = new System.Drawing.Size(78, 25);
@@ -413,29 +414,28 @@ namespace DashboardApp
             this.chartGrossRevenue.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.chartGrossRevenue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             chartArea1.AxisX.IsMarginVisible = false;
-            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Silver;
+            chartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             chartArea1.AxisX.LineColor = System.Drawing.Color.White;
             chartArea1.AxisX.LineWidth = 0;
             chartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.White;
             chartArea1.AxisX.MajorGrid.LineWidth = 0;
             chartArea1.AxisX.MajorTickMark.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(75)))), ((int)(((byte)(111)))));
             chartArea1.AxisX.MajorTickMark.Size = 3F;
-            chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.Color.Silver;
+            chartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             chartArea1.AxisY.LabelStyle.Format = "${0:0,}K";
             chartArea1.AxisY.LineColor = System.Drawing.Color.White;
             chartArea1.AxisY.LineWidth = 0;
-            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(75)))), ((int)(((byte)(111)))));
-            chartArea1.AxisY.MajorTickMark.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(75)))), ((int)(((byte)(111)))));
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.Silver;
+            chartArea1.AxisY.MajorTickMark.LineColor = System.Drawing.Color.Silver;
             chartArea1.AxisY.MajorTickMark.LineWidth = 0;
-            chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            chartArea1.BackColor = System.Drawing.Color.White;
             chartArea1.Name = "ChartArea1";
             this.chartGrossRevenue.ChartAreas.Add(chartArea1);
-            legend1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            legend1.BackColor = System.Drawing.Color.Transparent;
             legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
             legend1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            legend1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            legend1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             legend1.IsTextAutoFit = false;
             legend1.Name = "Legend1";
             this.chartGrossRevenue.Legends.Add(legend1);
@@ -443,13 +443,13 @@ namespace DashboardApp
             this.chartGrossRevenue.Margin = new System.Windows.Forms.Padding(5);
             this.chartGrossRevenue.Name = "chartGrossRevenue";
             series1.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.LeftRight;
-            series1.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(83)))), ((int)(((byte)(255)))));
+            series1.BackSecondaryColor = System.Drawing.Color.MediumTurquoise;
             series1.BorderWidth = 3;
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.SplineArea;
-            series1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(88)))), ((int)(((byte)(127)))));
+            series1.Color = System.Drawing.Color.DarkCyan;
             series1.Legend = "Legend1";
-            series1.MarkerColor = System.Drawing.Color.MediumPurple;
+            series1.MarkerColor = System.Drawing.Color.DarkCyan;
             series1.MarkerSize = 10;
             series1.Name = "Series1";
             this.chartGrossRevenue.Series.Add(series1);
@@ -458,23 +458,22 @@ namespace DashboardApp
             this.chartGrossRevenue.Text = "chartGrossRevenue";
             title1.Alignment = System.Drawing.ContentAlignment.TopLeft;
             title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            title1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            title1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             title1.Name = "Title1";
-            title1.Text = "Receita Bruta";
+            title1.Text = "Venda Bruta";
             this.chartGrossRevenue.Titles.Add(title1);
             // 
             // chartTopProducts
             // 
             this.chartTopProducts.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.chartTopProducts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
-            chartArea2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            chartArea2.BackColor = System.Drawing.Color.White;
             chartArea2.Name = "ChartArea1";
             this.chartTopProducts.ChartAreas.Add(chartArea2);
-            legend2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            legend2.BackColor = System.Drawing.Color.White;
             legend2.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
             legend2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            legend2.ForeColor = System.Drawing.Color.Gainsboro;
+            legend2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             legend2.IsTextAutoFit = false;
             legend2.Name = "Legend1";
             this.chartTopProducts.Legends.Add(legend2);
@@ -483,19 +482,20 @@ namespace DashboardApp
             this.chartTopProducts.Name = "chartTopProducts";
             this.chartTopProducts.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             this.chartTopProducts.PaletteCustomColors = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(160)))), ((int)(((byte)(139))))),
-        System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(188)))), ((int)(((byte)(0))))),
-        System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(88)))), ((int)(((byte)(127))))),
-        System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(220)))), ((int)(((byte)(205))))),
-        System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(83)))), ((int)(((byte)(255))))),
-        System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(153)))), ((int)(((byte)(254)))))};
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255))))),
+        System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(240)))), ((int)(((byte)(192))))),
+        System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(209)))), ((int)(((byte)(162))))),
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(209)))), ((int)(((byte)(205))))),
+        System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(209)))), ((int)(((byte)(166))))),
+        System.Drawing.Color.Empty};
             series2.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.DiagonalRight;
-            series2.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
-            series2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            series2.BackSecondaryColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            series2.BorderColor = System.Drawing.Color.White;
             series2.BorderWidth = 8;
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            series2.Color = System.Drawing.Color.DarkCyan;
             series2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             series2.IsValueShownAsLabel = true;
             series2.LabelForeColor = System.Drawing.Color.White;
@@ -507,7 +507,7 @@ namespace DashboardApp
             this.chartTopProducts.Text = "chartTopProducts";
             title2.Alignment = System.Drawing.ContentAlignment.TopLeft;
             title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            title2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            title2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             title2.Name = "Title1";
             title2.Text = "5 Produtos mais vendidos";
             this.chartTopProducts.Titles.Add(title2);
@@ -515,7 +515,7 @@ namespace DashboardApp
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Controls.Add(this.pictureBox6);
             this.panel4.Controls.Add(this.pictureBox5);
             this.panel4.Controls.Add(this.pictureBox4);
@@ -567,7 +567,7 @@ namespace DashboardApp
             this.lblNumProducts.AutoSize = true;
             this.lblNumProducts.BackColor = System.Drawing.Color.Transparent;
             this.lblNumProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumProducts.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblNumProducts.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             this.lblNumProducts.Location = new System.Drawing.Point(59, 185);
             this.lblNumProducts.Name = "lblNumProducts";
             this.lblNumProducts.Size = new System.Drawing.Size(78, 25);
@@ -590,7 +590,7 @@ namespace DashboardApp
             this.lblNumSuppliers.AutoSize = true;
             this.lblNumSuppliers.BackColor = System.Drawing.Color.Transparent;
             this.lblNumSuppliers.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumSuppliers.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblNumSuppliers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             this.lblNumSuppliers.Location = new System.Drawing.Point(59, 125);
             this.lblNumSuppliers.Name = "lblNumSuppliers";
             this.lblNumSuppliers.Size = new System.Drawing.Size(78, 25);
@@ -613,7 +613,7 @@ namespace DashboardApp
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             this.label7.Location = new System.Drawing.Point(10, 10);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(173, 25);
@@ -625,7 +625,7 @@ namespace DashboardApp
             this.lblNumCustomers.AutoSize = true;
             this.lblNumCustomers.BackColor = System.Drawing.Color.Transparent;
             this.lblNumCustomers.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumCustomers.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblNumCustomers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             this.lblNumCustomers.Location = new System.Drawing.Point(59, 65);
             this.lblNumCustomers.Name = "lblNumCustomers";
             this.lblNumCustomers.Size = new System.Drawing.Size(78, 25);
@@ -647,7 +647,7 @@ namespace DashboardApp
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.Controls.Add(this.pictureBox7);
             this.panel5.Controls.Add(this.dgvUnderstock);
             this.panel5.Controls.Add(this.label13);
@@ -676,24 +676,24 @@ namespace DashboardApp
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvUnderstock.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvUnderstock.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            this.dgvUnderstock.BackgroundColor = System.Drawing.Color.White;
             this.dgvUnderstock.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvUnderstock.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvUnderstock.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(124)))), ((int)(((byte)(141)))), ((int)(((byte)(181)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvUnderstock.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvUnderstock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(122)))), ((int)(((byte)(133)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvUnderstock.DefaultCellStyle = dataGridViewCellStyle2;
@@ -701,6 +701,15 @@ namespace DashboardApp
             this.dgvUnderstock.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(73)))), ((int)(((byte)(75)))), ((int)(((byte)(111)))));
             this.dgvUnderstock.Location = new System.Drawing.Point(15, 45);
             this.dgvUnderstock.Name = "dgvUnderstock";
+            this.dgvUnderstock.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUnderstock.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvUnderstock.RowHeadersVisible = false;
             this.dgvUnderstock.RowTemplate.Height = 35;
             this.dgvUnderstock.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -712,7 +721,7 @@ namespace DashboardApp
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             this.label13.Location = new System.Drawing.Point(10, 10);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(244, 25);
@@ -758,7 +767,7 @@ namespace DashboardApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
             this.ClientSize = new System.Drawing.Size(1204, 641);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.lblEndDate);

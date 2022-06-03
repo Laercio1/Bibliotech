@@ -15,19 +15,31 @@ namespace DashboardApp
     {
         //Fields
         private Button currentButton;
-        private int borderSize = 2;
+
         //Constructor
         public FormPrincipal()
         {
             InitializeComponent();
+            buttonDashboard.Select();
+            SetDateMenuButtonsUI(buttonDashboard);
             collapseMenu();
-            this.Padding = new Padding(borderSize);// Border Size
-            this.BackColor = Color.FromArgb(98, 102, 244);// Border color
         }
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void SetDateMenuButtonsUI(Object button)
+        {
+            var btn = (Button)button;
+            //HighLight button
+            btn.BackColor = buttonDashboard.FlatAppearance.BorderColor;
+            btn.ForeColor = Color.White;
+            //HighLight button
+            if (currentButton != null && currentButton != btn)
+            {
+                currentButton.BackColor = Color.DarkCyan;
+                currentButton.ForeColor = this.BackColor;
+            }
+            currentButton = btn;//Set current button
+        }
+
         private void AbrirFormEnPanel(object Formhijo)
         {
             if (this.panelDesktop.Controls.Count > 0)
@@ -43,6 +55,7 @@ namespace DashboardApp
         private void buttonDashboard_Click(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new FormDashboard());
+            SetDateMenuButtonsUI(sender);
         }
 
         private void collapseMenu()
@@ -81,6 +94,34 @@ namespace DashboardApp
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void buttonCliente_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FormConsultaCustomer());
+            SetDateMenuButtonsUI(sender);
+        }
+
+        private void buttonReceita_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FormConsultaOrder());
+            SetDateMenuButtonsUI(sender);
+        }
+
+        private void buttonDespesa_Click(object sender, EventArgs e)
+        {
+            SetDateMenuButtonsUI(sender);
+        }
+
+        private void buttonFornecedor_Click(object sender, EventArgs e)
+        {
+            SetDateMenuButtonsUI(sender);
+        }
+
+        private void buttonProduto_Click_1(object sender, EventArgs e)
+        {
+            SetDateMenuButtonsUI(sender);
+            AbrirFormEnPanel(new FormConsultaProduct());
         }
     }
 }
