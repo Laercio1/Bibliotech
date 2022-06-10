@@ -1,0 +1,18 @@
+C:\Users\NSYS-CDS-0301\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\DAL\bin\Debug\DAL.dll
+C:\Users\NSYS-CDS-0301\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\DAL\bin\Debug\DAL.pdb
+C:\Users\NSYS-CDS-0301\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\DAL\bin\Debug\Model.dll
+C:\Users\NSYS-CDS-0301\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\DAL\bin\Debug\Model.pdb
+C:\Users\NSYS-CDS-0301\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\NSYS-CDS-0301\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\NSYS-CDS-0301\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\NSYS-CDS-0301\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\DAL\obj\Debug\DAL.dll
+C:\Users\NSYS-CDS-0301\Desktop\Login-Plano-Moderno-Transparente-Placeholder-WinForm-C-Sharp-master\DAL\obj\Debug\DAL.pdb
+C:\Users\NSYS-CDS-0301\Desktop\Minha Pasta\ProjetoDashboard\DAL\bin\Debug\DAL.dll
+C:\Users\NSYS-CDS-0301\Desktop\Minha Pasta\ProjetoDashboard\DAL\bin\Debug\DAL.pdb
+C:\Users\NSYS-CDS-0301\Desktop\Minha Pasta\ProjetoDashboard\DAL\bin\Debug\Model.dll
+C:\Users\NSYS-CDS-0301\Desktop\Minha Pasta\ProjetoDashboard\DAL\bin\Debug\Model.pdb
+C:\Users\NSYS-CDS-0301\Desktop\Minha Pasta\ProjetoDashboard\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\NSYS-CDS-0301\Desktop\Minha Pasta\ProjetoDashboard\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\NSYS-CDS-0301\Desktop\Minha Pasta\ProjetoDashboard\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\NSYS-CDS-0301\Desktop\Minha Pasta\ProjetoDashboard\DAL\obj\Debug\DAL.dll
+C:\Users\NSYS-CDS-0301\Desktop\Minha Pasta\ProjetoDashboard\DAL\obj\Debug\DAL.pdb
