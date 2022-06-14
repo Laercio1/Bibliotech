@@ -1,0 +1,9 @@
+C:\Users\NSYS-CDS-0301\Desktop\Trabalho\AppTarefa\DAL\bin\Debug\DAL.dll
+C:\Users\NSYS-CDS-0301\Desktop\Trabalho\AppTarefa\DAL\bin\Debug\DAL.pdb
+C:\Users\NSYS-CDS-0301\Desktop\Trabalho\AppTarefa\DAL\bin\Debug\Model.dll
+C:\Users\NSYS-CDS-0301\Desktop\Trabalho\AppTarefa\DAL\bin\Debug\Model.pdb
+C:\Users\NSYS-CDS-0301\Desktop\Trabalho\AppTarefa\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\NSYS-CDS-0301\Desktop\Trabalho\AppTarefa\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\NSYS-CDS-0301\Desktop\Trabalho\AppTarefa\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\NSYS-CDS-0301\Desktop\Trabalho\AppTarefa\DAL\obj\Debug\DAL.dll
+C:\Users\NSYS-CDS-0301\Desktop\Trabalho\AppTarefa\DAL\obj\Debug\DAL.pdb
