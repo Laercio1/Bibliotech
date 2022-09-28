@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{303BAF3F-24AB-4EA6-964D-B220E36A29E5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bibliotech</RootNamespace>
+    <AssemblyName>Bibliotech</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>12_preview_rev_1_preview_rev_1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks">
+      <HintPath>C:\Users\NSYS-CDS-0301\Desktop\Trabalho\NewApp\UIPrincipal\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlePersonalizado\RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormCadastroAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormCadastroAutor.Designer.cs">
+      <DependentUpon>FormCadastroAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormCadastroCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormCadastroCategoria.Designer.cs">
+      <DependentUpon>FormCadastroCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormCadastroEditora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormCadastroEditora.Designer.cs">
+      <DependentUpon>FormCadastroEditora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormCadastroLeitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormCadastroLeitor.Designer.cs">
+      <DependentUpon>FormCadastroLeitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormCadastroLivro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormCadastroLivro.Designer.cs">
+      <DependentUpon>FormCadastroLivro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormSelecionarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormSelecionarAutor.Designer.cs">
+      <DependentUpon>FormSelecionarAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormSelecionarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormSelecionarCategoria.Designer.cs">
+      <DependentUpon>FormSelecionarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormSelecionarCidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormSelecionarCidade.Designer.cs">
+      <DependentUpon>FormSelecionarCidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormSelecionarEditora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormSelecionarEditora.Designer.cs">
+      <DependentUpon>FormSelecionarEditora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormSelecionarEmprestimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormSelecionarEmprestimo.Designer.cs">
+      <DependentUpon>FormSelecionarEmprestimo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormSelecionarEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormSelecionarEstado.Designer.cs">
+      <DependentUpon>FormSelecionarEstado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormSelecionarLeitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormSelecionarLeitor.Designer.cs">
+      <DependentUpon>FormSelecionarLeitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormSelecionarLivro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FomularioSelecao\FormSelecionarLivro.Designer.cs">
+      <DependentUpon>FormSelecionarLivro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroAutor.Designer.cs">
+      <DependentUpon>FormCadastroAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroCategoria.Designer.cs">
+      <DependentUpon>FormCadastroCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroCompra.Designer.cs">
+      <DependentUpon>FormCadastroCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroDevolucao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroDevolucao.Designer.cs">
+      <DependentUpon>FormCadastroDevolucao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroDoacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroDoacao.Designer.cs">
+      <DependentUpon>FormCadastroDoacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroEditora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroEditora.Designer.cs">
+      <DependentUpon>FormCadastroEditora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroEmprestimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroEmprestimo.Designer.cs">
+      <DependentUpon>FormCadastroEmprestimo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroLeitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroLeitor.Designer.cs">
+      <DependentUpon>FormCadastroLeitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroLivro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroLivro.Designer.cs">
+      <DependentUpon>FormCadastroLivro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroPermuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroPermuta.Designer.cs">
+      <DependentUpon>FormCadastroPermuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormDashboard.Designer.cs">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormSobre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormSobre.Designer.cs">
+      <DependentUpon>FormSobre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormCadastroUsuario.Designer.cs">
+      <DependentUpon>FormCadastroUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FomularioSelecao\FormCadastroAutor.resx">
+      <DependentUpon>FormCadastroAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FomularioSelecao\FormCadastroCategoria.resx">
+      <DependentUpon>FormCadastroCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FomularioSelecao\FormCadastroEditora.resx">
+      <DependentUpon>FormCadastroEditora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FomularioSelecao\FormCadastroLeitor.resx">
+      <DependentUpon>FormCadastroLeitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FomularioSelecao\FormCadastroLivro.resx">
+      <DependentUpon>FormCadastroLivro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FomularioSelecao\FormSelecionarAutor.resx">
+      <DependentUpon>FormSelecionarAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FomularioSelecao\FormSelecionarCategoria.resx">
+      <DependentUpon>FormSelecionarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FomularioSelecao\FormSelecionarCidade.resx">
+      <DependentUpon>FormSelecionarCidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FomularioSelecao\FormSelecionarEditora.resx">
+      <DependentUpon>FormSelecionarEditora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FomularioSelecao\FormSelecionarEmprestimo.resx">
+      <DependentUpon>FormSelecionarEmprestimo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FomularioSelecao\FormSelecionarEstado.resx">
+      <DependentUpon>FormSelecionarEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FomularioSelecao\FormSelecionarLeitor.resx">
+      <DependentUpon>FormSelecionarLeitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FomularioSelecao\FormSelecionarLivro.resx">
+      <DependentUpon>FormSelecionarLivro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCadastroAutor.resx">
+      <DependentUpon>FormCadastroAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCadastroCategoria.resx">
+      <DependentUpon>FormCadastroCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCadastroCompra.resx">
+      <DependentUpon>FormCadastroCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCadastroDevolucao.resx">
+      <DependentUpon>FormCadastroDevolucao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCadastroDoacao.resx">
+      <DependentUpon>FormCadastroDoacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCadastroEditora.resx">
+      <DependentUpon>FormCadastroEditora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCadastroEmprestimo.resx">
+      <DependentUpon>FormCadastroEmprestimo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCadastroLeitor.resx">
+      <DependentUpon>FormCadastroLeitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCadastroLivro.resx">
+      <DependentUpon>FormCadastroLivro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCadastroPermuta.resx">
+      <DependentUpon>FormCadastroPermuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormDashboard.resx">
+      <DependentUpon>FormDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormSobre.resx">
+      <DependentUpon>FormSobre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormCadastroUsuario.resx">
+      <DependentUpon>FormCadastroUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Model.ClassesModel.Autor.datasource" />
+    <None Include="Properties\DataSources\Model.ClassesModel.Categoria.datasource" />
+    <None Include="Properties\DataSources\Model.ClassesModel.Cidade.datasource" />
+    <None Include="Properties\DataSources\Model.ClassesModel.Compra.datasource" />
+    <None Include="Properties\DataSources\Model.ClassesModel.Devolucao.datasource" />
+    <None Include="Properties\DataSources\Model.ClassesModel.Doacao.datasource" />
+    <None Include="Properties\DataSources\Model.ClassesModel.Editora.datasource" />
+    <None Include="Properties\DataSources\Model.ClassesModel.Emprestimo.datasource" />
+    <None Include="Properties\DataSources\Model.ClassesModel.Estado.datasource" />
+    <None Include="Properties\DataSources\Model.ClassesModel.Leitor.datasource" />
+    <None Include="Properties\DataSources\Model.ClassesModel.Livro.datasource" />
+    <None Include="Properties\DataSources\Model.ClassesModel.Permuta.datasource" />
+    <None Include="Properties\DataSources\Model.ClassesModel.Usuario.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{8d52aff6-079a-42a7-9688-37f02c9049d2}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{c7b014cf-578d-44a1-acf4-45b239928404}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Infra\Infra.csproj">
+      <Project>{a5b11b24-b6d9-4d21-a662-aaedcaf9644b}</Project>
+      <Name>Infra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{bc4e3d5c-a2ae-4293-95c9-e292c094ea39}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33_preview_rev_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setaParaBaixo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-leitura-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuário-homem-com-círculo-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setaParaCima.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-livro-50 %283%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-mão-com-caneta-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-editar-propriedade-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-categorizar-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-emprestar-o-livro-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-emprestar-o-livro-50 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-devolver-o-livro-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ajuda-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rr_preview_rev_1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2022-09-23 at 20.53.07.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="12_preview_rev_1_preview_rev_1.ico" />
+    <None Include="Resources\icons8-setas-ordenadas-50 %281%29.png" />
+    <None Include="Resources\icons8-estante-de-livros-50 %281%29.png" />
+    <None Include="Resources\icons8-comprar-50 %281%29.png" />
+    <None Include="Resources\icons8-impressão-50 %282%29 %281%29.png" />
+    <None Include="Resources\tt.jpg" />
+    <None Include="Resources\12.jpg" />
+    <None Include="Resources\icons8-sair-50 %281%29.png" />
+    <None Include="Resources\icons8-apagar-contrato-50 %281%291.png" />
+    <None Include="Resources\icons8-signing-a-document-50 %281%29.png" />
+    <None Include="Resources\icons8-adicionar-regra-50 %281%29.png" />
+    <None Include="Resources\icons8-verificar-arquivo-50 %281%29.png" />
+    <None Include="Resources\icons8-pesquisar-50 %281%29 %281%29.png" />
+    <None Include="Resources\icons8-excluir-arquivo-50 %281%29.png" />
+    <None Include="Resources\icons8-apagar-contrato-50 %281%29.png" />
+    <None Include="Resources\icons8-salvar-arquivo-80 %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
