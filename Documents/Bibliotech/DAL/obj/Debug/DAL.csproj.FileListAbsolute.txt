@@ -1,0 +1,9 @@
+D:\Projetos - Trabalhos\Bibliotech\DAL\bin\Debug\DAL.dll
+D:\Projetos - Trabalhos\Bibliotech\DAL\bin\Debug\DAL.pdb
+D:\Projetos - Trabalhos\Bibliotech\DAL\bin\Debug\Model.dll
+D:\Projetos - Trabalhos\Bibliotech\DAL\bin\Debug\Model.pdb
+D:\Projetos - Trabalhos\Bibliotech\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Projetos - Trabalhos\Bibliotech\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Projetos - Trabalhos\Bibliotech\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\Projetos - Trabalhos\Bibliotech\DAL\obj\Debug\DAL.dll
+D:\Projetos - Trabalhos\Bibliotech\DAL\obj\Debug\DAL.pdb

@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "303baf3f-24ab-4ea6-964d-b220e36a29e5": {
+      "ProjectGuid": "303baf3f-24ab-4ea6-964d-b220e36a29e5",
+      "DisplayName": "Bibliotech",
+      "ColorIndex": 0
+    },
+    "bc4e3d5c-a2ae-4293-95c9-e292c094ea39": {
+      "ProjectGuid": "bc4e3d5c-a2ae-4293-95c9-e292c094ea39",
+      "DisplayName": "Model",
+      "ColorIndex": 1
+    },
+    "c7b014cf-578d-44a1-acf4-45b239928404": {
+      "ProjectGuid": "c7b014cf-578d-44a1-acf4-45b239928404",
+      "DisplayName": "DAL",
+      "ColorIndex": 2
+    },
+    "8d52aff6-079a-42a7-9688-37f02c9049d2": {
+      "ProjectGuid": "8d52aff6-079a-42a7-9688-37f02c9049d2",
+      "DisplayName": "BLL",
+      "ColorIndex": 3
+    },
+    "a5b11b24-b6d9-4d21-a662-aaedcaf9644b": {
+      "ProjectGuid": "a5b11b24-b6d9-4d21-a662-aaedcaf9644b",
+      "DisplayName": "Infra",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

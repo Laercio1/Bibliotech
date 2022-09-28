@@ -1,0 +1,9 @@
+D:\Projetos - Trabalhos\Bibliotech\Infra\bin\Debug\Infra.dll
+D:\Projetos - Trabalhos\Bibliotech\Infra\bin\Debug\Infra.pdb
+D:\Projetos - Trabalhos\Bibliotech\Infra\bin\Debug\Model.dll
+D:\Projetos - Trabalhos\Bibliotech\Infra\bin\Debug\Model.pdb
+D:\Projetos - Trabalhos\Bibliotech\Infra\obj\Debug\Infra.csproj.AssemblyReference.cache
+D:\Projetos - Trabalhos\Bibliotech\Infra\obj\Debug\Infra.csproj.CoreCompileInputs.cache
+D:\Projetos - Trabalhos\Bibliotech\Infra\obj\Debug\Infra.csproj.CopyComplete
+D:\Projetos - Trabalhos\Bibliotech\Infra\obj\Debug\Infra.dll
+D:\Projetos - Trabalhos\Bibliotech\Infra\obj\Debug\Infra.pdb

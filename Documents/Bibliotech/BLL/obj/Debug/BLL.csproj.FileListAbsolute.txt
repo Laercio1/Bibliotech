@@ -1,0 +1,11 @@
+D:\Projetos - Trabalhos\Bibliotech\BLL\bin\Debug\BLL.dll
+D:\Projetos - Trabalhos\Bibliotech\BLL\bin\Debug\BLL.pdb
+D:\Projetos - Trabalhos\Bibliotech\BLL\bin\Debug\DAL.dll
+D:\Projetos - Trabalhos\Bibliotech\BLL\bin\Debug\Model.dll
+D:\Projetos - Trabalhos\Bibliotech\BLL\bin\Debug\DAL.pdb
+D:\Projetos - Trabalhos\Bibliotech\BLL\bin\Debug\Model.pdb
+D:\Projetos - Trabalhos\Bibliotech\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\Projetos - Trabalhos\Bibliotech\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Projetos - Trabalhos\Bibliotech\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\Projetos - Trabalhos\Bibliotech\BLL\obj\Debug\BLL.dll
+D:\Projetos - Trabalhos\Bibliotech\BLL\obj\Debug\BLL.pdb
